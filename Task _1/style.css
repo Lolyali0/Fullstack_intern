@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto";
+}
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0;
+    height: 48px;
+}
+
+.navbar img{
+    width: 160px;
+    height: 40px;
+}
+.navbar ul{
+    display: flex;
+    width: 60%;
+}
+.navbar ul li {
+    margin-right: 30px;
+}
+.navbar ul li a{
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+.navbar ul li a span{
+    margin-top: -8px;
+    }
+.navbar ul li a:hover{
+    color: #e4a71b;
+}
+.dropdown{
+ width: 200px ;
+ background-color: white;
+ position: absolute;
+ flex-direction: column;
+    padding: 8px 8px;
+    margin-left: -50px;
+    display: none;
+    border-radius: 8px;
+
+}
+.dropdown  li{
+margin: 16px 0;
+    width: 100%;
+    display: flex;
+    padding-left:5px;
+}
+
+.strocked{
+    border: 1px solid #e4a71b ;
+    border-radius: 8px;
+    color: #e4a71b ;
+    font-size: 14px ;
+    font-weight:500;
+    margin: 8px;
+    width: 140px;
+    padding: 16px 32px ;
+    background-color: transparent;
+}
+.strocked:hover{
+border: none;
+background-color: #f8b517;
+color: black;
+}
+.filled{
+    border-radius: 8px;
+    font-size: 14px ;
+    font-weight:500;
+    margin: 8px;
+    padding: 16px 32px ;
+    background-color: #f8b517;
+    border: none;
+}
+
+
+.hero_section{
+    background:  linear-gradient(250deg, #292929, #565656 173.43%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    padding: 80px;
+
+}
+.hero_section .title{
+    font-size: 64px;
+    width: 70%;
+    text-align: center;
+    background:  linear-gradient(250deg, #c9c2b8, #ffc641 173.43%);
+    -webkit-text-fill-color: linear-gradient(250deg, #c9c2b8, #ffc641 173.43%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hero_section .sub-title{
+width: 60%;
+text-align: center;
+color: rgb(215, 215, 215);
+margin: 16px;
+line-height: 20px;
+}
+ul li:hover  .dropdown{
+    display: block;
+}
